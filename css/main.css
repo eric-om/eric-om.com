@@ -37,6 +37,13 @@ section {
   background-color: #111;
 }
 
+.bg-transition {
+  transition: background-color 0.6s ease-in;
+  -moz-transition: background-color 0.6s ease-in;
+  -o-transition: background-color 0.6s ease-in;
+  -webkit-transition: background-color 0.6s ease-in;
+}
+
 .clicked {
   background: lightgreen;
 }
@@ -110,6 +117,15 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+  transition: 0.3s;
+}
+a:hover {
+  opacity: 0.6;
+}
 
 h1 {
   font-weight: 400;

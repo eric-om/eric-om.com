@@ -1,5 +1,6 @@
 $(document).ready(function () {
   $("body").addClass("bg");
+  setTimeout(() => $("body").addClass("bg-transition"), 1200);
   $(window).scroll(function () {
     var windowPos = $(this).scrollTop();
     $(".fade").each(function (index) {
