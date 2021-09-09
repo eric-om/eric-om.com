@@ -6,7 +6,7 @@ $(document).ready(function () {
     $(".fade").each(function (index) {
       var blockHeight = $(this).outerHeight();
       var blockPos = $(this).offset().top;
-      var opacity = 1 - Math.abs((3 * (windowPos - blockPos)) / blockHeight);
+      var opacity = 3 - Math.abs((10 * (windowPos - blockPos)) / blockHeight);
       $(this).css("opacity", opacity);
     });
 
